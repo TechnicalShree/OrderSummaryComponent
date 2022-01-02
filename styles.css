@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  display: flex;
+  background-color: var(--Pale-blue);
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  min-height: 700px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 450px;
+  height: 660px;
+  background-color: white;
+  border-radius: 17px;
+  margin: 100px auto;
+  overflow: hidden;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 8%;
+}
+
+h2 {
+  margin: 10px;
+  font-weight: 900;
+  color: var(--Dark-blue);
+}
+
+.info {
+  color: var(--Desaturated-blue);
+  padding: 10px 40px;
+  text-align: center;
+}
+
+.plan {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Very-pale-blue);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.plan .plan_name_and_period {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.plan_name_and_period p {
+  color: var(--Desaturated-blue);
+  padding: 3px;
+}
+.planType {
+  font-weight: 900;
+  color: var(--Dark-blue);
+  margin: 0;
+  padding: 3px;
+}
+
+a {
+  cursor: pointer;
+  color: var(--Bright-blue);
+  font-weight: 700;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.finish {
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--Bright-blue);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.finish:hover {
+  background-color: hsl(245, 100%, 59%);
+}
+
+.cancel {
+  border: none;
+  background-color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.cancel:hover {
+  color: var(--Dark-blue);
+}
